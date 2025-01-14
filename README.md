@@ -34,7 +34,7 @@ Here are some of the mini projects included in this repository:
    Checks if a given word or phrase is a palindrome.
 
 7. **Pixel Paint**  
-   A mini pixel art painting application.
+   A mini broser extension/webpage to pick colors.
 
 8. **To-Do List**  
    A task management app to keep track of your daily activities.
@@ -44,6 +44,9 @@ Here are some of the mini projects included in this repository:
 
 10. **QR Code Generator**  
     Generates QR codes for user-inputted text or URLs.
+
+11. **Captcha Generator**  
+    Generates captcha and validate after submition.
 
 *Note: This is a subset of the projects. Explore the repository to discover more!*
 
