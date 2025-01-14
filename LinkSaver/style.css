@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+/* Full Viewport Styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #1C64B4;
+}
+
+/* Center the Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Main Card Styling */
+.main {
+    width: 90%;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* height: 60vh;
+    overflow-y: scroll;
+    scrollbar-width: none; */
+}
+
+/* Title Styling */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Area Styling */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#link-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s;
+}
+
+#link-input:focus {
+    outline: none;
+    border-color: #2f80ed;
+    box-shadow: 0 0 5px rgba(47, 128, 237, 0.3);
+}
+
+#add-btn {
+    padding: 10px 20px;
+    background: #2f80ed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+#add-btn:hover {
+    background: #1e62b3;
+    transform: scale(1.05);
+}
+
+/* Links List Styling */
+#links-list {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Link Item Styling */
+#links-list li {
+    background: #f1f1f1;
+    color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Text Styling */
+#links-list li span {
+    flex: 1;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Button Styling */
+#links-list li button {
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+/* Copy Button Styling */
+.copy-btn {
+    color: #2f80ed;
+}
+
+.copy-btn:hover {
+    background: rgba(47, 128, 237, 0.1);
+    transform: scale(1.2);
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    color: #d9534f;
+}
+
+.delete-btn:hover {
+    background: rgba(217, 83, 79, 0.1);
+    transform: scale(1.2);
+}
+
+/* Hover Effect for List Items */
+#links-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+#total-links{
+    background: #f1f1f1;
+    color: #2f80ed;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}

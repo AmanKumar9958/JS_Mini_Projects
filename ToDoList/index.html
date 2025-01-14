@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h2 style="text-align: center; margin-top: 1vh;">To Do List</h2>
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="Add a new task">
+                <button id="addButton">Add Task</button>
+            </div>
+            <div class="summary">
+                <p>Total Tasks: <span id="total-tasks">0</span></p>
+                <p>Completed: <span id="completed-tasks">0</span></p>
+                <p>Remaining: <span id="remaining-tasks">0</span></p>
+            </div>
+            <ul id="tasks-list">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

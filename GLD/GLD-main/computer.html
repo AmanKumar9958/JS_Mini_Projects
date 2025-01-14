@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLD- Computer-Course</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="active.css">
+    <link rel="shortcut icon" href="images/Logo_GLD.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <!-- PAGE-1 -->
+        <div class="page1">
+            <!-- NAVBAR -->
+            <header>
+                <nav>
+                    <!-- SIDEBAR -->
+                    <div class="sidebar">
+                        <div class="right">
+                            <ul class="nav-list">
+                                <li onclick="hideMenu()"><i class="fa-solid fa-xmark"></i></li>
+                                <li id="home" class="nav-list-links"><a class="list-items" href="index.html">Home</a></li>
+                                <li id="course" class="nav-list-links"><a class="list-items services" href="courses.html">Courses</a>
+                                    <ul class="services-list">
+                                        <li><a style="text-decoration: none; color: white;" href="english.html">English</a></li>
+                                        <li><a style="text-decoration: none; color: white;" href="computer.html">Computer</a></li>
+                                        <li><a style="text-decoration: none; color: white;" href="competitive.html">Competitive Classes</a></li>
+                                        <li><a style="text-decoration: none; color: white;" href="academics.html">10th, 11th & 12th (Arts & PCB)</a></li>
+                                    </ul>
+                                </li>
+                                <li id="contact" class="nav-list-links"><a class="list-items" href="contact.html">Contact Us</a></li>
+                                <li id="about" class="nav-list-links"><a class="list-items" href="index.html#about">About Us</a></li>
+                                <li class="nav-list-links-enq"><button id="enquiry-btn" onclick="enquiry()">Enquiry</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- REGULAR -->
+                    <div class="regular">
+                        <div class="left hideOnMobile">
+                            <img src="images/Logo_GLD.png" alt="GLD_Logo" id="logo-img">
+                            <div class="name">
+                                <span id="gld">GLD</span>
+                                <span id="institute">Institution</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="nav-list">
+                                <li id="home" class="nav-list-links hideOnMobile"><a class="list-items" href="index.html">Home</a></li>
+                                <li id="course" class="nav-list-links hideOnMobile"><a class="list-items services" href="courses.html">Courses</a>
+                                    <ul class="services-list">
+                                        <li><a style="color: white;" href="english.html">English</a></li>
+                                        <li><a style="color: white;" href="computer.html">Computer</a></li>
+                                        <li><a style="color: white;" href="competitive.html">Competitive Classes</a></li>
+                                        <li><a style="color: white;" href="academics.html">10th, 11th & 12th (Arts & PCB)</a></li>
+                                    </ul>
+                                </li>
+                                <li id="contact" class="nav-list-links hideOnMobile"><a class="list-items" href="contact.html">Contact Us</a></li>
+                                <li id="about" class="nav-list-links hideOnMobile"><a class="list-items" href="index.html#about">About Us</a></li>
+                                <li 
+                                /.class="nav-list-links-enq hideOnMobile"><button id="enquiry-btn" onclick="enquiry()">Enquiry</button></li=>
+                                <li onclick="showMenu()"><i class="fa-solid fa-bars"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- CHAT-OPTION -->
+            <div class="chat" onclick="chat()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path></svg>
+                <span id="chat">CHAT</span>
+            </div>
+            <!-- Computer Page -->
+            <div class="computer">
+                <!-- Some Headings -->
+                <div class="computer-headings">
+                    <h2 class="course-heading" style="margin-top: 2vh; margin-bottom: 2vh;">Let's Learn <span style="color: #0A58CA; font-size: 1.3em;">Computer</span></h2>
+                    <h2 class="course-heading" style="margin-top: 2vh; margin-bottom: 2vh;">With <span style="color: #0A58CA; font-size: 1.3em;">GLD</span></h2>
+                </div>
+                <hr width="50%" style="margin: auto; height: 10px; opacity: 1;">
+                <!-- Main Content -->
+                <div class="computer-body">
+                    <h2 class="course-heading" style="margin-top: 5vh; margin-bottom: 7vh;">GLD provides many <span style="color: #0A58CA; font-size: 1.3em;">Computer Courses</span></h2>
+                    <!-- Computer Courses List New -->
+                    <div class="computer-courses-new">
+                        <div class="courses">
+                            <!-- Courses Card 1 -->
+                            <div class="courses-card-1">
+                                <div class="mobile-view-card-1">
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/Multimedia.webp" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Multimedia & Design</h5>
+                                            <p class="card-text">Learn to become graphic designer, video creator, and animation artist.</p>
+                                            <a href="computer.html#multimedia-design" class="btn btn-primary" id="btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/ADCA.webp" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">ADCA <span id="adca">(Adv. Diploma in Computer App.)</span></h5>
+                                            <p class="card-text">You are eligible in accounting, graphic design, and web designing.</p>
+                                            <a href="computer.html#adca1" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-view-card-2">
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/Digital Marketing.webp" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Digital Marketing</h5>
+                                            <p class="card-text">Learn how to market products and services to reach customers Digitally.</p>
+                                            <a href="computer.html#digital-marketing" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/Full stack Development.webp" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Full Stack Development</h5>
+                                            <p class="card-text">Learn to become a fill stack website developer & make carrer bright.</p>
+                                            <a href="computer.html#full-stack" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Courses Card 2 -->
+                            <div class="courses-card-2">
+                                <div class="mobile-view-card-3">
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/DCA.webp" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">DCA <span id="dca">(Diploma in Computer Application)</span></h5>
+                                            <p class="card-text">By this course you will become specailized in computer applications.</p>
+                                            <a href="computer.html#diplomaInComp" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/it genius.webp" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IT Genius</h5>
+                                            <p class="card-text">You'll be eligible in accounting, web & graphic design and digital marketing.</p>
+                                            <a href="computer.html#it" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-view-card-4">
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/corporate e accounting (1).webp" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corporate e-Accounting</h5>
+                                            <p class="card-text">You can build a successfull carrer in Finance & accounting corporate.</p>
+                                            <a href="computer.html#e-corporate" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/dip-image.jpg" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Diploma in Programming</h5>
+                                            <p class="card-text">Learn to protect computer system, networks & data from cyber attacks.</p>
+                                            <a href="computer.html#programming" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Courses Card 3 -->
+                            <div class="courses-card-3">
+                                <div class="mobile-view-card-5">
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/job9.jpg" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Web Development</h5>
+                                            <p class="card-text">By this course you will be specialized in making websites.</p>
+                                            <a href="computer.html#webdev" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 16rem;">
+                                        <img src="images/job10.jpg" class="card-img-top" alt="Multimedia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Short Term Courses</h5>
+                                            <p class="card-text">By using this course you will learn about how to do programming.</p>
+                                            <a href="computer.html#short" class="btn btn-primary">Know More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- About Section of each courses -->
+                    <div class="computer-courses-about" id="computerAbout">
+                        <!-- Multimedia -->
+                        <div class="multimedia-about computer-about" id="multimedia-design">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh; color: #003366; font-weight: bold;"><span id="first-word">Multimedia</span> & Design Course</h2>
+                                <div class="multi-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        The Multimedia & Design Course at GLD makes your career in digital and print media communication technology for students who want to get job in creative fields such as design image, video, audio, print publishing and gaming animation. GLD has various course under the Multimedia & Design which give you the opportunities to work in national and international studio. The Multimedia and design course has bright future for the 12th pass students in the media and entertainment industry.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Scope & Career</span> opportunities</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                <ul>
+                                    <li style="list-style-type: disc;">Multimedia and design has become most demanding and high paying career option today's digital world. </li>
+                                    <li style="list-style-type: disc;">Multimedia jobs is available in both the public sector and as well as in private sector. There are a lot of career options after a Diploma in Multimedia. </li>
+                                    <li style="list-style-type: disc;">There are so many industries such as advertisement agencies, films and production houses. Academic institutions, Entertainment industry, Web industry, Designing industry, Print News Media, Publishing industry, Cartoon production, Journalism and news channels has so many vacancies. </li>
+                                    <li style="list-style-type: disc;">After completing a multimedia course, one can work in various industries like graphic design, UI design, video editing, animation, architecture designing, interior designing. </li>
+                                </ul>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs opportunity</span> in Multimedia & Design</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/job1.jpg" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <ul>
+                                            <li style="list-style: decimal;">Multimedia Designer</li>
+                                            <li style="list-style: decimal;">Publication Designer</li>
+                                            <li style="list-style: decimal;">Animator</li>
+                                            <li style="list-style: decimal;">Video Animator</li>
+                                            <li style="list-style: decimal;">Layout Designer</li>
+                                            <li style="list-style: decimal;">Template Designer</li>
+                                            <li style="list-style: decimal;">2D/3D Designer</li>
+                                            <li style="list-style: decimal;">UI/UX Designer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ADCA -->
+                        <div class="adca-about computer-about" id="adca1">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; color: #003366; font-weight: bold; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About the ADCA</span> Course</h2>
+                                <div class="adca-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        ADCA stands for Advance Diploma in Computer Application intended to impart the students to gain hands-on skills related to computer applications and software. If you have passed your 12th grade and want to make a career in any field or pursue Graduation then this course is necessary for you. This course allows you to upgrade your skills and stay up-to-date with the latest technologies and trends in the field. The course exposes you to basic computer application, programming languages, Ms office, graphic designing,  and many others. It is a great course to kickstart your career in any field and pitch yourself in supervising and leadership roles.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                    <table style="padding-left: 2vw;">
+                                        <tbody style="padding-left: 2vw;">
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will understand the basics concept of computer hardware, software, and networking.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will be professional in using MS-Window operating system from basic to advance</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will know how to create documents by using text, graphics, and tables with font style and size to enhance appearance in different sizes and formats by using  Ms-Word.</td>
+                                            </tr>
+                                            <tr class="last-one" style="opacity: 1;">
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will be able to create data formatting and manipulation by using formulas and functions in MS-excel. And know how to sort, filter the data, and create charts, and pivot tables.</td>
+                                            </tr>
+                                            <tr class="last-second" style="opacity: 1;">
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will be skilled in designing and delivering presentations with formatted slides and text, images, and video. Also, know how to apply template animation and transition.</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                <b id="read" onclick="read()" style="display: none;">&nbsp;&nbsp;Read More <i class="bi bi-caret-down-fill"></i></b>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="content" style="display: block; margin-top: 0px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will get extreme knowledge of web coding such as HTML, CSS, JavaScript, and server-side scripting languages like PHP or Python. It will enable you to create static and dynamic websites.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You can develop expertise in using Tally Prime software, you will get knowledge of various accounting operations like:- ledger creation, voucher, and journal entry. Along with financial statements, manage inventory, and tax compliances including GST Invoicing and reporting.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will learn the rules and regulations which are required in GST &amp; TDS. Which develops a detailed understanding of the GST framework, including its concepts, principles, and legal provisions.  you will know to calculate the TDS amount and generate tds certificates.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You can develop your communication skills and build confidence in speaking English. Also, improve Your vocabulary and grammar. </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs opportunity</span> after completing ADCA Course</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/website-design.jpg" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <p style="text-align: justify; padding-right: 2vw;">
+                                            After completing this course you will get many job and career opportunities easily in the computer and IT field like e-commerce, government organizations, and security companies. You can start your early earnings with this course because there is no education criteria for this course and every business needs  that kind of skilled employee. This course will also allow you to do work from home. After learning this course you can set up your own business.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Digital Marketing -->
+                        <div class="digital-about computer-about" id="digital-marketing">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About Digital</span> Marketing Course</h2>
+                                <div class="adca-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        Digital marketing is one of the most in-demand courses in now-a-time. <strong> Best digital marketing course in delhi</strong> . Especially, after covid when more businesses are shifting to digital platforms, it offers high-paying jobs and careers for both creative and technical roles. In this course, you will learn how to advertise products and services using social media and Google platforms on the internet. You will also learn how to make money online through affiliate marketing and blogging. By taking this course you can also gain knowledge of consumer behavior, digital marketing trends, and the latest tools and techniques used in the industry first.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                    <table>
+                                        <tbody><tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>
+                                                You will know the basic principles of marketing and their concept. Why digital marketing is so important in today's day and age and its benefits.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will learn how to make websites like:- E-commerce, Informational, Blogging, static and dynamic.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will know how to use marketing tools effectively and achieve market goals, along with planning, execution, and optimization. </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You can become an expert in SEO (search engine optimization) by using search engine marketing tools that result in a ranked website and how to audit sites  &amp; make reports.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will be able to identify the target audience based on demographics, interests, and behavior.</td>
+                                        </tr>
+                                        <tr class="last-one" style="opacity: 1;">
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will be professional in social media marketing &amp;  gain expertise in creating campaigns, content creation, &amp; community management.
+                                            </td>
+                                        </tr>
+                                        <tr class="last-second" style="opacity: 1;">
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will gain expertise in creating campaigns in Google ads including, budgeting, bidding, keyword planning, and performance tracking.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <b id="read" onclick="read()" style="display: none;">&nbsp;&nbsp;Read More <i class="bi bi-caret-down-fill"></i></b>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table id="content" style="display: block; margin-top: 0px;">
+                                        <tbody><tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will know the types of content and their uses for various marketing purposes which engage the target audience.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will be able to do email marketing using a template and with segmentation to maximize marketing conversion. Along with conversion tracking.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will learn how to analyze and create reports of marketing performance like:- Website traffic, Website ranking, event tracking, user demographics, and user behavior by using Google Analytics and other analytic tools.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will acquire skills to make digital marketing strategies that achieve various kinds of business goals.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You nnow how to make money online in blogging and affiliate products by using the Google AdSense tool.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will be skilled in various AI tools that increase your performance by up to 10X</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>After completing this course you will get the knowledge and skills to plan, execute, and analyze overall marketing performance.</td>
+                                        </tr>
+                                    </tbody></table>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs</span> opportunity in Digital Marketing</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/job3.webp" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <p style="text-align: justify; padding-right: 2vw;">
+                                            In digital marketing career you can expect significantly higher growth in salary and the roles.The scope of digital marketing is increasing with radical changes. Every small and big businesses arefocusing more on digital marketing and therefore there is a huge demand for digital marketers in the market. Highersalaries, secured job profiles, and broad goals are benefits of a digital marketing course.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Full-Stack Development -->
+                        <div class="full-about computer-about" id="full-stack">
+                                <!-- Title -->
+                                <div class="title">
+                                    <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About Full-Stack</span> Development Course</h2>
+                                    <div class="full-stack-para">
+                                        <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                            Full-Stack Development involves creating both the front-end and back-end components of a web application. The front-end, or client-side, focuses on the user interface and experience, utilizing technologies like HTML, CSS, and JavaScript frameworks such as React, Angular, or Vue.js. The back-end, or server-side, manages the application’s logic, database interactions, and server configurations. Common back-end languages include Node.js, Python, Ruby, Java, and PHP, often paired with databases like MySQL, MongoDB, or PostgreSQL. A Full-Stack Developer possesses skills across both domains, enabling them to build complete, functional web applications from scratch. They must understand web protocols, server, network, and hosting environments, as well as database management and APIs. This versatility allows for seamless communication between front-end and back-end development, streamlining the process and improving efficiency. The role is highly valued for its comprehensive knowledge and ability to handle diverse aspects of web development projects.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Scope -->
+                                <div class="scope">
+                                    <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        <table>
+                                            <tbody><tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td> Conceptualizing creative website ideas for and with clients.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Designing engaging and responsive website landing pages. </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Employing industry and design best practice through website build process.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Conducting testing and improving the website design to create the best possible user experience.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Integrating client CMS programs and data feeds into websites. </td>
+                                            </tr>
+                                            <tr class="last-one" style="opacity: 1;">
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Optimizing sites for maximum speed and scalability. </td>
+                                            </tr>
+                                            <tr class="last-second" style="opacity: 1;">
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Designing visual imagery for websites and ensuring that they are in line with branding for clients.</td>
+                                            </tr>
+                
+                                            <tr>
+                                                <td colspan="2">
+                                                    <b id="see" onclick="see()" style="display: none;">&nbsp;&nbsp;Read More <i class="bi bi-caret-down-fill"></i></b>
+                                                </td>
+                                            </tr>
+                                            </tbody></table>
+                                            <table id="content" style="display: block; margin-top: 0px;">
+
+                                                <tbody><tr>
+                                                    <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                    <td>Use their learned skills, knowledge and abilities to develop web sites for the internet.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                    <td>Apply basic design principles to present ideas, information, products, and services on websites.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                    <td>Apply basic programming principles to the construction of websites. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                    <td>Effectively manage website projects using available resources. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                    <td>Demonstrate communication skills, service management skills, and presentation skills. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                    <td>Complete job preparation tasks including writing resumes and cover letters, conducting job interviews and developing an ePortfolio. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                    <td>Apply employability skills including fundamental skills, personal management skills, and teamwork skills. </td>
+                                                </tr>
+                                            </tbody></table>
+                                    </p>
+                                </div>
+                                <!-- Job-Opportunities -->
+                                <div class="job-cotainer">
+                                    <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs opportunity</span> as a Full Stack Developer</h2>
+                                    <div class="job">
+                                        <div class="job-left">
+                                            <img src="images/job4.avif" alt="Job-Image">
+                                        </div>
+                                        <div class="job-right">
+                                            <p style="text-align: justify; padding-right: 2vw;">
+                                                After completing your website design training course, you can work in a web designing company or you can work as a
+                    consultant. There are thousands of companies that work with web developer for their front end and backside
+                    web
+                    development jobs. Additionally you can work separately as a web designer as well as setup your own business.
+                    The
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- DCA -->
+                        <div class="dca-about computer-about" id="diplomaInComp">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About</span> the DCA Course</h2>
+                                <div class="adca-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        The Diploma in Computer Applications (DCA) is a short-term course that provides foundational knowledge in computer science and IT. Lasting six months to a year, the DCA course covers essential topics like computer fundamentals, operating systems, MS Office, internet applications, database management, and basic programming languages such as C and C++. It also includes training in software applications and web development. Ideal for students and professionals seeking to enhance their computer skills, DCA equips learners with practical skills for entry-level jobs in the IT industry, such as data entry operator, technical support, and office assistant. The course is also beneficial for those aiming to pursue further studies in computer science, providing a solid foundation for advanced courses. Overall, DCA offers a cost-effective and time-efficient pathway to gain essential IT competencies.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                    <table>
+                                        <tbody><tr>
+                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                <td>You will be able to do Formatting, Animation, and Editing slides. </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                <td>You will be capable of managing data and recording day-to-day accounting transactions on Tally Prime.</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                <td>You will be able to work on the E-Way bill and record advanced adjustment entries of GST.</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                <td> After learning CSS  you can modify the designs of websites and be able to create a customized website without putting a lot of effort. </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                <td>  You can craft professional word documents, excel spreadsheets, and PowerPoint presentations using Microsoft office tools.</td>
+                            </tr>
+                                    </tbody>
+                                    </table>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs</span> opportunity after completing DCA Course</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/job5.png" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <p style="text-align: justify; padding-right: 2vw;">
+                                            There are different open positions today, and more up-to-date openings are consistently coming with the advancement of the IT business. A diploma in Computer Application will open a broad list of career opportunities for you as this is quite possibly the most flexible diploma accessible today and also supports you in your growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- IT-Genius -->
+                        <div class="it-about computer-about" id="it">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Become an </span>IT genius</h2>
+                                <div class="adca-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        In this course, you will learn that you need to grow in the IT sector. IT-Genius course primarily focuses on practical-based concepts rather than learning the theories and you can get complete knowledge of Computer applications from designing to development and how to do online marketing. If you like to be creative and innovative then this course will skill you in different fields like Graphic designing,  web design &amp; development and Digital marketing. This course is a combination of the skill set that you need to grow your career in the IT field. And you can also  set your own online business through this course.        
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                    <table>
+                                        <tbody><tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will understand the basic concepts of computer hardware, software, and networking.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will be professional in using MS-Window operating system from basic to advance.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will know how to create documents by using text, graphics, and tables with font style and size to enhance appearance in different sizes and formats by using  Ms-Word.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will be able to create data formatting and manipulating by using formulas and functions in MS-excel. And know how to sorting, filtering the data and create charts, pivot tables.</td>
+                                        </tr>
+                                        <tr class="last-one">
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will be skilled in designing and delivering presentations with formatted slides and text, image, and video. Also know how to apply template animation and transition.</td>
+                                        </tr>
+                                        <tr class="last-second">
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will get extreme knowledge of web coding such as HTML, CSS, JavaScript, and server-side scripting languages like PHP. It will enable you to create static and dynamic websites.</td>
+                                        </tr>
+                                        </tbody></table>
+                                        <table id="content">
+                                            <tbody><tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will be able to create responsive websites that can automatically adjust according to screen size of different devices.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will understand the importance of web accessibility and learn techniques to make your websites inclusive and usable for people with disabilities, ensuring equal access to information and functionality.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You Will be familiar with integrating databases by using Mysql that stores and receives data.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will be able to develop user interface (UI) and user experience (UX) of any kind of website and APP by using front-end and back-end technology.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will know how to make a secure website and protect from spam, virus and illegal activity.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will learn how to rank webpage or website on any search engine to increase website traffic and visibility to gain organic traffic.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>You will know how to promote products and services on social media platform to create brand awareness and visibility.</td>
+                                            </tr>
+                
+                                        </tbody></table>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs</span> opportunity in IT Field</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/job6.jpg" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <p style="text-align: justify; padding-right: 2vw;">
+                                            It is one of the highly demand skills these days, you will get a lot of opportunities no matter which sector you work in. This course will help you to speed up the growth of your career and make you eligible to get a higher salary package. This long-term course will open up various sectors and give you a lot of benefits of learning this course.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- e-corporate -->
+                        <div class="corporate-about computer-about" id="e-corporate">
+                                <!-- Title -->
+                                <div class="title">
+                                    <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About E-Accounting </span>Course</h2>
+                                    <div class="e-accounting-para">
+                                        <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                            Corporate accounting is considered as a unique branch of accounting dealing with the companies. The Corporate E-Accounting course will help you in gaining the essential skills that are required to become an accountant in a reputed corporation. This course involves the preparation of financial activity and cash flow  like accounting, manufacturing, taxation, banking and payroll  for the various corporates . This course will  add great value to your resume  and opens the doors of opportunity in accounting career.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Scope -->
+                                <div class="scope">
+                                    <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        <table>
+                                            <tbody><tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Apply in depth knowledge of animation and the knowledge of Principles of Animation in every Software</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Able to work with professional skill in Animation studios and production house.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Evaluate the organization and functions of the Animation industry.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Implements effective techniques of work.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Utilize interpersonal skill of leadership to lead the whole team for efficient output.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>To analyze and solve problems, using appropriate technology and accurate knowledge of software</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </p>
+                                </div>
+                                <!-- Job-Opportunities -->
+                                <div class="job-cotainer">
+                                    <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs</span> opportunity in Corporate e-Accounting</h2>
+                                    <div class="job">
+                                        <div class="job-left">
+                                            <img src="images/job7.jpg" alt="Job-Image">
+                                        </div>
+                                        <div class="job-right">
+                                            <p style="text-align: justify; padding-right: 2vw;">
+                                                Every organization needs an expert to analyze their finances and give them an analysis record for their long term growth, therefore the scope of corporate accounting is increasing by the time and will be in demand for a long time. Having expertise in corporate accounting you may get a higher salary package.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Programming -->
+                        <div class="programming-about computer-about" id="programming">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About Diploma in </span>Programming Course</h2>
+                                <div class="e-accounting-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        A diploma in programming course is a combination of different programming languages and ethical hacking. This course will teach the essential concepts and coding skills needed for Front-end, Back-end web development, Machine Learning, IOS, Android Development, and much more. It will also teach you about the basic concept of cyber security and ethical hacking, penetration testing and system hacking. DIP course enables you to become skillful in the IT sector by getting in-depth knowledge of IT tools or Web Development.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                    <table>
+                                        <tbody><tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td> You’ll be able to create websites and android apps. </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td> You’ll be able to do efficient and effective work by using IT tools.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll be able to optimize the web pages.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td> You’ll be able to Incorporate and examine information, process, and codes to investigate issues and recognize regions for development. </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will able to form various cryptographic techniques, their pragmatic relevance &amp; weaknesses.  </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll be able to build highly available and scalable internet applications.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll be able to develop fast apps on any platforms. </td>
+                                        </tr>
+                                    </tbody></table>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs</span> opportunity in Programming Filed</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/job8.jpg" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <p style="text-align: justify; padding-right: 2vw;">
+                                            Programming is one of the most demanding fields in this digital era, There are millions of companies that need a developer to build their website, apps, and software within a time and secure their websites from hackers and much more. This course helps you to become skillful in this developing field and opens up multiple career opportunities after doing this course.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Web Development -->
+                        <div class="webdev-about computer-about" id="webdev">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About Web </span>Development Course</h2>
+                                <div class="e-accounting-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        Web development is the process of creating websites or web applications, encompassing content, design, and functionality. It involves three main stages: planning, design, and implementation. The planning stage determines the website's goals and target audience. The design stage focuses on the layout and aesthetics, while the implementation stage involves coding to make the site functional. Various programming languages like HTML, CSS, JavaScript, and PHP are used. Web development is constantly evolving with new technologies and techniques. It's a sought-after skill with many job opportunities, making it an excellent career choice for technology enthusiasts.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                    <table>
+                                        <tbody><tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td> Conceptualizing creative website ideas for and with clients.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>Designing engaging and responsive website landing pages. </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>Employing industry and design best practice through website build process.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>Conducting testing and improving the website design to create the best possible user experience.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>Integrating client CMS programs and data feeds into websites. </td>
+                                        </tr>
+                                        <tr class="last-one">
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>Optimizing sites for maximum speed and scalability. </td>
+                                        </tr>
+                                        <tr class="last-second">
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>Designing visual imagery for websites and ensuring that they are in line with branding for clients.</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                        <table id="content">
+                                            <tbody><tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Use their learned skills, knowledge and abilities to develop web sites for the internet.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Apply basic design principles to present ideas, information, products, and services on websites.</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Apply basic programming principles to the construction of websites. </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Effectively manage website projects using available resources. </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Demonstrate communication skills, service management skills, and presentation skills. </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Complete job preparation tasks including writing resumes and cover letters, conducting job interviews and developing an ePortfolio. </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                                <td>Apply employability skills including fundamental skills, personal management skills, and teamwork skills. </td>
+                                            </tr>>
+                                        </tbody>
+                                    </table>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs</span> opportunity as a Web Developer</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/job9.jpg" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <p style="text-align: justify; padding-right: 2vw;">
+                                            
+                    After completing your website design training course, you can work in a web designing company or you can
+                    work as a
+                    consultant. There are thousands of companies that work with web developer for their front end and backside
+                    web
+                    development jobs. Additionally you can work separately as a web designer as well as setup your own business.
+                    The
+                    significant occupation areas in this area consist of:
+                
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Short-Term Courses -->
+                        <div class="short-about computer-about" id="short">
+                            <!-- Title -->
+                            <div class="title">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">About Short </span>Term Courses</h2>
+                                <div class="e-accounting-para">
+                                    <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                        These days computer demand is increasing day by day because as we all know everything is shifted towards the computer or on the internet. This short-term course will guide you in using the best way of computer and computer applications. This course is designed for students who don’t have enough knowledge about using computers and want to learn about computer fundamentals. Students who passed the 8th class are eligible for this course. This course is beneficial for you to start your career, after learning this course you will be eligible of doing work faster and progress in your career much easier.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Scope -->
+                            <div class="scope">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 2vh;"><span id="first-word">Learning</span> outcomes</h2>
+                                <p style="text-align: justify; padding-left: 2vw; padding-right: 10vw;">
+                                    <table>
+                                        <tbody><tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You will have a basic understanding of computer applications and Software </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll be able to design presentations and documents</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll be able to Manage the data effectively and efficiently</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll become an expert in MS office</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll understand how to set up and protect your computer </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll have great knowledge about the internet and its functions</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px; font-size: 35px; display: -webkit-inline-box;"> • </td>
+                                            <td>You’ll be able to solve the problems regarding work or computer. </td>
+                                        </tr>
+                                    </tbody></table>
+                                </p>
+                            </div>
+                            <!-- Job-Opportunities -->
+                            <div class="job-cotainer">
+                                <h2 style="margin-left: 2vw; padding-top: 2vh; padding-bottom: 4vh;"><span id="first-word">Jobs opportunity after</span> completing short term courses</h2>
+                                <div class="job">
+                                    <div class="job-left">
+                                        <img src="images/job10.jpg" alt="Job-Image">
+                                    </div>
+                                    <div class="job-right">
+                                        <p style="text-align: justify; padding-right: 2vw;">
+                                            This computer course furnishes you with multiple career opportunities in various sectors. Having experience and expertise in this course will enable you to get a higher salary within a short period of time.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PAGE-2 -->
+        <div class="page2">
+            <!-- FOOTER -->
+            <footer>
+                <!-- VISIT -->
+                <div class="visit">
+                    <h4 style="font-weight: bold;">VISIT OUR INSTITUTE</h4>
+                    <h4 style="font-weight: bold;">Main Brach</h4>
+                    <p class="address">
+                        <i class="fa-solid fa-location-dot"></i> Milk Shop 12003 Shop 4 Prop No I 1258G I Block <br> Gali 18 Hari Nagar, Rd, Extn, Badarpur, New Delhi, Delhi 110044
+                    </p>
+                    <p class="phone" style="margin-top: 3%;">
+                        <i class="fa-solid fa-phone"></i> 8090019485
+                    </p>
+
+                </div>
+                <!-- NAVIGATION -->
+                <div class="navigation">
+                    <h4 id="navi">NAVIGATION</h4>
+                    <div class="location">
+                        <h4 style="font-weight: bold; margin-bottom: 6%;">Location</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2749083518993!2d77.31965567543833!3d28.5013755900247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce7ab521b8903%3A0xffdb904a5964dfa1!2sGLD%20INSTITUTION!5e0!3m2!1sen!2sin!4v1718590041274!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- QUICK LINKS -->
+                <div class="quick-links">
+                    <h4 style="font-weight: bold;">QUICK LINKS</h4>
+                    <div class="links">
+                        <ul class="links-list">
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="courses.html"><li>Courses</li></a>
+                            <a href="contact.html"><li>Contact Us</li></a>
+                            <a href="index.html#about"><li>About Us</li></a>
+                            <a href="index.html#enquiry-form"><li>Enquiry</li></a>
+                            <a href="" onclick="chat()"><li>Chat</li></a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-link">
+                    <h4 id="follow" style="font-weight: bold;">Follow Us</h4>
+                    <div class="social-link-list">
+                        <a href="https://youtube.com/@gldinstitution5?si=gJ9_thojQINBLRDX" target="_blank"><i class="fa-brands fa-youtube"></i>YouTube</a>
+                        <a href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- MOVE TO TOP BTN -->
+            <div class="move-top">
+                <button id="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

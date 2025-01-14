@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            height: 100vh;
+            width: 100%;
+            background-color: royalblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px 15px;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .bottom{
+            margin-top: 15px;
+            display: flex;
+        }
+        #msg{
+            background-color: blue;
+            padding: 5px;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-right: 15px;
+            display: none;
+        }
+        #add{
+            background-color: greenyellow;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        #cursor{
+            border-radius: 50%;
+        background-color: yellow;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transition: all linear 100ms;
+        mix-blend-mode: difference;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="card">
+            <div class="top">
+                <img src="student icon.webp" alt="image">
+            </div>
+            <div class="mid">
+                <h2>Aman Kumar</h2>
+                <h3 style="text-align: center; color: red;" id="status">Stranger</h3>
+            </div>
+            <div class="bottom">
+                <button id="msg">Message</button>
+                <button id="add">Add Friend</button>
+            </div>
+        </div>
+        <div id="cursor"></div>
+    </div>
+    <script>
+        var isStatus = document.getElementById('status');
+        var friend = document.getElementById('add');
+        var message = document.getElementById('msg')
+        var main = document.getElementById('main');
+        var cursor = document.getElementById('cursor')
+        var flag = 0;
+        add.addEventListener("click", function(){
+            if(flag == 0){
+                isStatus.innerHTML = 'Friends';
+                isStatus.style.color = 'green';
+                add.innerHTML = 'Remove'
+                message.style.display = 'block'
+                flag = 1;
+            }
+            else{
+                isStatus.innerHTML = 'Stranger';
+                isStatus.style.color = 'red';
+                add.innerHTML = 'Add Friend';
+                message.style.display = 'none'
+                flag = 0
+            }
+        })
+        message.addEventListener('click', function(){
+            alert("He is sleeping")
+        })
+        main.addEventListener("mousemove", function(dets){
+            cursor.style.top = dets.y + "px";
+            cursor.style.left = dets.x + "px";
+        })
+    </script>
+</body>
+</html>

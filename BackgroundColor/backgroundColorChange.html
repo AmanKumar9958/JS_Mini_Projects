@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Change</title>
+    <style>
+        .boxes{
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .color-boxes{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Background Color Change</h1>
+        <input type="text" id="colorInput">
+        <button onclick="backgroundColorChange()">Change</button>
+
+        <h2>Your previous Color</h2>
+        <div class="boxes">
+            <div class="color-boxes" id="prevBox1"></div>
+            <div class="color-boxes" id="prevBox2"></div>
+        </div>
+    </div>
+    <script>
+        // function backgroundColorChange(){
+        //     var color = document.getElementById("colorInput").value;
+        //     document.body.style.backgroundColor = color;
+        // }
+        let previousColors = [];
+        function backgroundColorChange(){
+            const colorInput = document.getElementById("colorInput").value;
+            document.body.style.backgroundColor = colorInput;
+
+            if(previousColors.length >= 2){
+                previousColors.shift();
+            }
+            previousColors.push(colorInput);
+
+            if(previousColors[0]){
+                document.getElementById('prevBox1').style.backgroundColor = previousColors[0];
+            }
+            if(previousColors[1]){
+                document.getElementById('prevBox2').style.backgroundColor = previousColors[1];
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5%;
+}
+#cursor{
+    border-radius: 50%;
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transition: all linear 100ms;
+    mix-blend-mode: difference;
+}
+h1{
+    font-size: 10vw;
+    text-align: center;
+    font-family: monospace;
+    user-select: none;
+}
+#ground{
+    height: 100%;
+    width: 100%;
+    border: 5px solid black;
+    background-color: burlywood;
+}

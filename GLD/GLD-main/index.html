@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLD- Institution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="active.css">
+    <link rel="shortcut icon" href="images/Logo_GLD.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="page1">
+            <!-- NAVBAR -->
+            <header>
+                <nav>
+                    <!-- SIDEBAR -->
+                    <div class="sidebar">
+                        <div class="right">
+                            <ul class="nav-list">
+                                <li onclick="hideMenu()"><i class="fa-solid fa-xmark"></i></li>
+                                <li id="home" class="nav-list-links"><a class="list-items" href="index.html">Home</a></li>
+                                <li id="course" class="nav-list-links"><a class="list-items services" href="courses.html">Courses</a>
+                                    <ul class="services-list">
+                                        <li><a style="text-decoration: none; color: white;" href="english.html">English</a></li>
+                                        <li><a style="text-decoration: none; color: white;" href="computer.html">Computer</a></li>
+                                        <li><a style="text-decoration: none; color: white;" href="competitive.html">Competitive Classes</a></li>
+                                        <li><a style="text-decoration: none; color: white;" href="academics.html">10th, 11th & 12th (Arts & PCB)</a></li>
+                                    </ul>
+                                </li>
+                                <li id="contact" class="nav-list-links"><a class="list-items" href="contact.html">Contact Us</a></li>
+                                <li id="about" class="nav-list-links"><a class="list-items" href="index.html#about">About Us</a></li>
+                                <li class="nav-list-links-enq"><button id="enquiry-btn" onclick="enquiry()">Enquiry</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- REGULAR -->
+                    <div class="regular">
+                        <div class="left hideOnMobile">
+                            <img src="images/Logo_GLD.png" alt="GLD_Logo" id="logo-img">
+                            <div class="name">
+                                <span id="gld">GLD</span>
+                                <span id="institute">Institution</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="nav-list">
+                                <li id="home" class="nav-list-links hideOnMobile"><a class="list-items" href="index.html">Home</a></li>
+                                <li id="course" class="nav-list-links hideOnMobile"><a class="list-items services" href="courses.html">Courses</a>
+                                    <ul class="services-list">
+                                        <li><a style="color: white;" href="english.html">English</a></li>
+                                        <li><a style="color: white;" href="computer.html">Computer</a></li>
+                                        <li><a style="color: white;" href="competitive.html">Competitive Classes</a></li>
+                                        <li><a style="color: white;" href="academics.html">10th, 11th & 12th (Arts & PCB)</a></li>
+                                    </ul>
+                                </li>
+                                <li id="contact" class="nav-list-links hideOnMobile"><a class="list-items" href="contact.html">Contact Us</a></li>
+                                <li id="about" class="nav-list-links hideOnMobile"><a class="list-items" href="index.html#about">About Us</a></li>
+                                <li 
+                                /.class="nav-list-links-enq hideOnMobile"><button id="enquiry-btn" onclick="enquiry()">Enquiry</button></li=>
+                                <li onclick="showMenu()"><i class="fa-solid fa-bars"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- IMAGE-SLIDER -->
+            <div class="img-slider">
+                <div class="img-slider-1 slider-img"><img src="images/courses-offered.webp" alt="Courses_Offered"></div>
+                <div class="img-slider-2 slider-img"><img src="images/digital-marketing-banner-desktop.webp" alt="Courses_Offered"></div>
+                <div class="img-slider-3 slider-img"><img src="images/stock-market-banner.webp" alt="Courses_Offered"></div>
+            </div>
+            <!-- NOTICE-STRIP-->
+            <div class="imp-notice">
+                <marquee behavior="" direction="left" scrollamount=9><p><span style="color: red;">Summer Offer</span> - JOIN COMPUTER CLASSES & GET <b>25 FREE CLASSES OF ENGLISH</b></p></marquee>
+            </div>
+            <!-- CHAT-OPTION -->
+            <div class="chat" onclick="chat()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path></svg>
+                <span id="chat">CHAT</span>
+            </div>
+            <!-- About GLD -->
+            <div class="about" id="about">
+                <div class="left">
+                    <h1 id="about-gld-heading">About <span style="color: #0A58CA; font-size: 1.3em;">GLD</span></h1>
+                    <div id="about-para">
+                        <div id="about-para-1" class="about-paragraph">
+                            <p><span style="color: #F01A24; font-weight: bold;">Welcome</span> to <span style="color: #F01A24; font-weight: bold;">GLD Institution</span> We are an <span style="color: #043170; font-weight: bold;">ISO 9001:2015 and MSME Certified</span>. Having trained 
+                            thousands of students in various Vocational training sectors since 2019</p>
+                        </div>
+                        <div id="about-para-2" class="about-paragraph">
+                            <p>A place where learning becomes a fun with experienced teachers with innovative learning methods that can help students to develop their skills in a meaningful learning environment and improve learning outcomes in a more engaging and productive way than the other places where the teacher has to work with students to develop the best learning environment for them and to make sure they have a better future for themselves.</p>
+                        </div>
+                        <div id="about-para-3" class="about-paragraph">
+                            <p>We offer here many courses in different skill development and getting great jobs our courses are Based on making opportunities for students in the sectors of private and public We offer communication skills, technical courses in computer and preparing for government exams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/Logo_GLD.png" alt="boy-image" id="gld-logo-img">
+                </div>
+            </div>
+            <!-- Courses -->
+            <h2 class="course-heading">Our <span style="color: #0A58CA; font-size: 1.3em;">Courses</span></h2>
+            <div class="courses">
+                <!-- Courses Card 1 -->
+                <div class="courses-card-1">
+                    <div class="mobile-view-card-1">
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/Multimedia.webp" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                                <h5 class="card-title">Multimedia & Design</h5>
+                                <p class="card-text">Learn to become graphic designer, video creator, and animation artist.</p>
+                                <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/ADCA.webp" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                              <h5 class="card-title">ADCA <span id="adca">(Adv. Diploma in Computer App.)</span></h5>
+                              <p class="card-text">You are eligible in accounting, graphic design, and web designing.</p>
+                              <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-view-card-2">
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/Digital Marketing.webp" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                              <h5 class="card-title">Digital Marketing</h5>
+                              <p class="card-text">Learn how to market products and services to reach customers Digitally.</p>
+                              <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/Full stack Development.webp" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                              <h5 class="card-title">Full Stack Development</h5>
+                              <p class="card-text">Learn to become a fill stack website developer & make carrer bright.</p>
+                              <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Courses Card 2 -->
+                <div class="courses-card-2">
+                    <div class="mobile-view-card-3">
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/DCA.webp" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                              <h5 class="card-title">DCA <span id="dca">(Diploma in Computer Application)</span></h5>
+                              <p class="card-text">By this course you will become specailized in computer applications.</p>
+                              <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/it genius.webp" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                              <h5 class="card-title">IT Genius</h5>
+                              <p class="card-text">You'll be eligible in accounting, web & graphic design and digital marketing.</p>
+                              <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-view-card-4">
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/corporate e accounting (1).webp" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                              <h5 class="card-title">Corporate e-Accounting</h5>
+                              <p class="card-text">You can build a successfull carrer in Finance & accounting corporate.</p>
+                              <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 16rem;">
+                            <img src="images/dip-image.jpg" class="card-img-top" alt="Multimedia">
+                            <div class="card-body">
+                              <h5 class="card-title">Diploma in Programming</h5>
+                              <p class="card-text">Learn to protect computer system, networks & data from cyber attacks.</p>
+                              <a href="courses.html" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-bottom: 2vh;">
+                <a href="courses.html"><button class="btn btn-primary">Explore Courses</button></a>
+            </div>
+            <!-- GLD Features and Facilities -->
+            <div class="features">
+                <h1>GLD <span style="color: white; font-size: 1.3em;">Features</span> and <span style="color: white; font-size: 1.3em;">Facilities</span></h1>
+                <div class="features-container">
+                    <div class="features-1">
+                    <div class="teacher features-list">
+                        <img src="images/Expert_&_Experienced_Trainers1.png" alt="Expert_Teachers">
+                        <h4>Expert Teacher</h4>
+                    </div>
+                    <div class="extra features-list">
+                        <img src="images/Extra_Batches_For_Doubt_Class1.png" alt="Extra_Classes">
+                        <h4>Extra Classes</h4>
+                    </div>
+                </div>
+                <div class="features-2">
+                    <div class="self-study features-list">
+                        <img src="images/Work_On_Live_Project 1.png" alt="self-study">
+                        <h4>Space for Self Study</h4>
+                    </div>
+                    <div class="batches features-list">
+                        <img src="images/Flexible_Batch_Timings1.png" alt="Flexible-batches">
+                        <h4>Flexible-batches</h4>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Specially Designed For -->
+            <div class="specailly">
+                <div class="specailly-left">
+                    <img src="images/who can join.webp" alt="Who Can Join">
+                </div>
+                <div class="specailly-right">
+                    <h2 class="specailly-right-text">Our Courses are designed specailly for <span class="auto-type"></span></h2>
+                    <img src="images/Courses_For.png" alt="Courses-Designed-For">
+                </div>
+            </div>
+            <!-- Enquiry Form -->
+            <div class="enquiry-form" id="enquiry-form">
+                <div class="form-left">
+                    <div class="form-left-headings">
+                        <h3>Didn't Find</h3>
+                        <h2>What You're</h2>
+                        <h2>Looking for?</h2>
+                    </div>
+                    <div class="form-left-body">
+                        <p style="text-align: justify;">If you have any questions or <br> need assistance in any course, <br> just send us message using the enquiry form. <br> We will always to help you by providing the required information.</p>
+                        <button class="call-btn form-btn" onclick="call()">Call Now</button>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="form-container">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <h5>Enquire Now</h5>
+                            <input type="hidden" name="access_key" value="eb69d73d-5469-4fa2-9252-5e4e8525ce3a">
+                            <input type="text" name="name" id="name" class="input" placeholder="Your Name" required > <br>
+                            <input type="number" name="number" id="number" class="input" placeholder="Your Mobile Number" required> <br>
+                            <input type="email" name="email" id="email" class="input" placeholder="Your Email" required> <br>
+                            <select name="courses" id="from-courses" style="font-weight: bold;" required>
+                                <option value="">Choose Courses</option>
+                                <option value="English">English</option>
+                                <option value="Computer">Computer</option>
+                                <option value="Competitive-Classes">Competitive-Classes</option>
+                                <option value="Academics">Academics</option>
+                            </select> <br>
+                            <textarea name="message" id="form-msg" rows="4" cols="40" placeholder="Your Message" required></textarea> <br>
+                            <input type="submit" value="Submit" class="form-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="page2">
+            <!-- FOOTER -->
+            <footer>
+                <!-- VISIT -->
+                <div class="visit">
+                    <h4 style="font-weight: bold;">VISIT OUR INSTITUTE</h4>
+                    <h4 style="font-weight: bold;">Main Brach</h4>
+                    <p class="address">
+                        <i class="fa-solid fa-location-dot"></i> Milk Shop 12003 Shop 4 Prop No I 1258G I Block <br> Gali 18 Hari Nagar, Rd, Extn, Badarpur, New Delhi, Delhi 110044
+                    </p>
+                    <p class="phone" style="margin-top: 3%;">
+                        <i class="fa-solid fa-phone"></i> 8090019485
+                    </p>
+
+                </div>
+                <!-- NAVIGATION -->
+                <div class="navigation">
+                    <h4 id="navi">NAVIGATION</h4>
+                    <div class="location">
+                        <h4 style="font-weight: bold; margin-bottom: 6%;">Location</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2749083518993!2d77.31965567543833!3d28.5013755900247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce7ab521b8903%3A0xffdb904a5964dfa1!2sGLD%20INSTITUTION!5e0!3m2!1sen!2sin!4v1718590041274!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- QUICK LINKS -->
+                <div class="quick-links">
+                    <h4 style="font-weight: bold;">QUICK LINKS</h4>
+                    <div class="links">
+                        <ul class="links-list">
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="courses.html"><li>Courses</li></a>
+                            <a href="contact.html"><li>Contact Us</li></a>
+                            <a href="index.html#about"><li>About Us</li></a>
+                            <a href="index.html#enquiry-form"><li>Enquiry</li></a>
+                            <a href="" onclick="chat()"><li>Chat</li></a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-link">
+                    <h4 id="follow" style="font-weight: bold;">Follow Us</h4>
+                    <div class="social-link-list">
+                        <a href="https://youtube.com/@gldinstitution5?si=gJ9_thojQINBLRDX" target="_blank"><i class="fa-brands fa-youtube"></i>YouTube</a>
+                        <a href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- MOVE TO TOP BTN -->
+            <div class="move-top">
+                <button id="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+            </div>
+            <p id="visitors" style="text-align: center; margin-top: 5vh;"><span style="font-weight: bold;">Visitors: </span><span id="count"></span></p>
+        </div>
+        <!-- Pop-up -->
+        <div id="popup">
+            <div id="mainContentPopup">
+                <span id="closeIcon">&times</span>
+                <div id="popupContent">
+                    <img src="images/Logo_GLD.png" alt="GLD-Logo" style="width: 40%; border-radius: 50%; margin-top: 4vh; margin-bottom: 3vh;">
+                    <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; font-weight: bold; margin-bottom: 2vh;">Welcome to GLD Institution</h4>
+                    <h4 style="text-align: center;">A place where Study becomes <span style="font-weight: bold;">easy and affordable</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

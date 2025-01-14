@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(1, 1, 39);
+}
+#container{
+    width: 30vw;
+    min-height: 40vh;
+    /* height: max-content; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    outline: 0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background: #494eea;
+    color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    margin-bottom: 2vh;
+}
+#imgBox{
+    overflow: hidden;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    max-height: 0;
+    transition: max-height 1s;
+}
+#imgBox img{
+    /* width: 200px; */
+    width: fit-content;
+    padding: 10px;
+}
+#imgBox.show-img{
+    max-height: fit-content;
+    width: fit-content;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+        border-color: red;
+    }
+    25%{
+        transform: translateX(-2px);
+        border-color: red;
+    }
+    50%{
+        transform: translateX(0);
+        border-color: red;
+    }
+    75%{
+        transform: translateX(2px);
+        border-color: red;
+    }
+    100%{
+        transform: translateX(0);
+        border-color: red;
+    }
+}
+
+@media (max-width: 803px){
+    #container{
+        width: 90vw;
+        /* height: ; */
+    }
+    input{
+        width: 60%;
+    }
+    button{
+        width: 60%;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+}

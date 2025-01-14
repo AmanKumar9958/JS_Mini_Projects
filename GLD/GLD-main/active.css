@@ -1,0 +1,4 @@
+nav ul li.active a {
+    background-color: orange; /* Change this to your desired active background color */
+    color: white; /* Optional: change the text color */
+}

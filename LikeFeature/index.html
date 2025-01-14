@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DblTap - Like</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            background-color: lightseagreen;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #card{
+            width: 20%;
+            height: 50%;
+            background-color: lightyellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5vh;
+            border-radius: 20px;
+            user-select: none;
+        }
+        #card img{
+            cursor: pointer;
+        }
+        #heart{
+            font-size: 5rem;
+            user-select: none;
+            transition: 1s all;
+            opacity: 0;
+            position: absolute;
+            /* color: rgba(245, 245, 245, 0.726); */
+            color: red;
+            cursor: pointer;
+            scale: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="card">
+            <img src="student icon.webp" alt="Student-Image">
+            <p id="heart">&#10084;</p>
+            <p id="likes">No. of likes: <span id="likesCount"></span></p>
+        </div>
+    </div>
+    <script>
+        var card = document.getElementById('card');
+        var heart = document.getElementById('heart');
+        card.addEventListener('dblclick', function(){
+            heart.style.opacity = 0.5;
+            heart.style.transform = 'translateY(-55px)';
+            heart.style.scale = 1
+            setTimeout(function(){
+            heart.style.opacity = 0;
+            heart.style.scale = 0
+            }, 1500)
+        })
+        //Like counter
+        function likesCounter(){
+            const likes = document.getElementById('likesCount');    
+            document.addEventListener('DOMContentLoaded', function(){
+                let likeCount = 0;
+                card.addEventListener('dblclick', function(){
+                    likeCount++;
+                    likes.textContent = `${likeCount} Likes`;
+                })
+            })
+        }
+        likesCounter();
+    </script>
+</body>
+</html>

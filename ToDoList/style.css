@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('https://source.unsplash.com/random/1920x1080?nature,abstract') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #1C64B4;
+}
+
+.main {
+    width: 90%;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+}
+
+#task-input:focus {
+    outline: none;
+    border-color: #2f80ed;
+    box-shadow: 0 0 5px rgba(47, 128, 237, 0.3);
+}
+
+#addButton {
+    padding: 10px 20px;
+    background: #2f80ed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#addButton:hover {
+    background: #1e62b3;
+}
+
+#tasks-list {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between tasks */
+}
+
+#tasks-list li {
+    background: #ffffff;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* For animation */
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in;
+}
+
+#tasks-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.delete {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.delete:hover {
+    color: #c0392b;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #7f8c8d;
+    background: #dff0d8;
+    text-decoration-thickness: 2px;
+    position: relative; /* For animation */
+    animation: taskComplete 0.5s ease-in;
+}
+
+.summary {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+}
+
+.summary p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary span {
+    font-weight: bold;
+    color: #2f80ed;
+}
+
+li {
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes taskComplete {
+    from {
+        background-color: #f9f9f9;
+        transform: scale(1);
+    }
+    to {
+        background-color: #dff0d8;
+        transform: scale(1.02);
+    }
+}
+
+@keyframes deleteTask {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* For Deleted Task */
+.deleting {
+    animation: deleteTask 0.5s forwards;
+}
+
+/* Style the Edit Button */
+button.edit {
+    background-color: #f0f0f0;  /* Light background for a clean look */
+    border: none;               /* Remove default border */
+    border-radius: 50%;         /* Rounded button shape */
+    padding: 8px;               /* Space around the icon */
+    margin-left: 10px;          /* Space between the text and buttons */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Style the icon inside the button */
+button.edit i {
+    color: #4CAF50;  /* Green color for the edit icon */
+    font-size: 18px;  /* Icon size */
+    transition: transform 0.3s ease; /* Icon transform effect on hover */
+}
+
+/* On hover, change the background and scale the icon */
+button.edit:hover {
+    background-color: #e0f7e7;  /* Light green background */
+    transform: scale(1.1);       /* Slightly enlarge the button */
+}
+
+/* On hover, slightly rotate the icon */
+button.edit:hover i {
+    transform: rotate(15deg);  /* Rotate the icon for better visual effect */
+}
+
+/* Focus effect for accessibility */
+button.edit:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(76, 175, 80, 0.6); /* Green outline on focus */
+}
+
+/* Style the Delete Button */
+button.delete {
+    background-color: #f0f0f0;  /* Light background for a clean look */
+    border: none;               /* Remove default border */
+    border-radius: 50%;         /* Rounded button shape */
+    padding: 8px;               /* Space around the icon */
+    margin-left: 10px;          /* Space between the text and buttons */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Style the icon inside the button */
+button.delete i {
+    color: #e74c3c;  /* Red color for the delete icon */
+    font-size: 18px;  /* Icon size */
+    transition: transform 0.3s ease; /* Icon transform effect on hover */
+}
+
+/* On hover, change the background and scale the icon */
+button.delete:hover {
+    background-color: #ffebee;  /* Light red background */
+    transform: scale(1.1);       /* Slightly enlarge the button */
+}
+
+/* On hover, slightly rotate the icon */
+button.delete:hover i {
+    transform: rotate(15deg);  /* Rotate the icon for better visual effect */
+}
+
+/* Focus effect for accessibility */
+button.delete:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(231, 76, 60, 0.6); /* Red outline on focus */
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #task-input {
+        font-size: 0.9rem;
+    }
+
+    #addButton {
+        font-size: 0.9rem;
+    }
+}

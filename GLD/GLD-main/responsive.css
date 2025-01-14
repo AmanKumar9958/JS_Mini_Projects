@@ -1,0 +1,343 @@
+@media (max-width: 803px) {
+    nav{
+        padding: 2% -2%;
+    }
+    #gld{
+        letter-spacing: 31px;
+    }
+    #institute{
+        font-size: 16px;
+    }
+    .nav-list-links{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .left {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        width: 90%;
+    }
+    .about .right img{
+        margin-left: 16px;
+    }
+    .slider-img img{
+        width: 100%;
+        height: 35vh;
+    }
+    .img-slider{
+        width: 100%;
+        height: 35vh;
+    }
+    .about .left{
+        display: flex;
+        flex-direction: column;
+        width: 93%;
+        padding: 0;
+    }
+    #gld-logo-img{
+        width: 80%;
+        margin-left: 28px;
+    }
+    #about-gld-heading{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #444444;
+    }
+    .left>img{
+        width: 14vw;
+        height: auto;
+        border-radius: 50%;
+        transition: all 300ms;
+    }
+    #enquiry-btn{
+        font-weight: bold;
+        width: 85px;
+        padding: -10px;
+    }
+    .mobile-view-card-1{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .mobile-view-card-2{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .mobile-view-card-3{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .mobile-view-card-4{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .mobile-view-card-5{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .courses-card-1{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: all 300ms;
+    }
+    .courses-card-2{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: all 300ms;
+    }
+    .courses-card-3{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: all 300ms;
+    }
+    .specailly-right-text{
+        width: 300px;
+        /* float: right; */
+        text-align: left;
+        font-size: 36px;
+        font-weight: bolder;
+        color: #444;
+    }
+    .specailly-left img{
+        height: 300px;
+        width: 100%;
+    }
+    .specailly-left{
+        padding: 0 5%;
+    }
+    .enquiry-form{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        text-align: justify;
+    }
+    .form-left-headings h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .form-left-headings h3{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .call-btn{
+        margin-bottom: 4%;
+    }
+    .form-btn{
+        margin-bottom: 3vh;
+    }
+    #scrollToTopBtn{
+        position: fixed;
+        bottom: 20px;
+        right: 45%;
+        z-index: 99;
+        font-size: 19px;
+        border: none;
+        outline: none;
+        background-color: #084A7C;
+        color: white;
+        cursor: pointer;
+        padding: 8px 15px;
+        border-radius: 10px;
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 3% 4%;
+    }
+    #follow::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        height: 4px;
+        width: 15%;
+        left: 0;
+        background-color: yellow;
+        border-radius: 10px;
+    }
+    .quick-links h4::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        height: 4px;
+        width: 15%;
+        left: 0;
+        background-color: yellow;
+        border-radius: 10px;
+    }
+    .social-link-list{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .links-list{
+        margin-top: 5%;
+    }
+    .links{
+        margin-left: 2%;
+    }
+    .quick-links{
+        margin-top: 7%;
+    }
+    .social-link{
+        margin-top: 7%;
+    }
+    .navigation{
+        margin-top: 7%;
+    }
+    .location{
+        margin-top: 4%;
+        margin-top: 2%;
+    }
+    #navi::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        height: 4px;
+        width: 20%;
+        left: 0;
+        background-color: yellow;
+        border-radius: 10px;
+    }
+    .page2{
+        min-height: 140vh;
+    }
+    .contact-top-left{
+        display: none;
+    }
+    .contact-top-right{
+        margin-left: 5%;
+    }
+    .contact-bottom-left{
+        display: none;
+    }
+    .contact-bottom-right{
+        margin-left: 5%;
+    }
+    .contact-end-left{
+        display: none;
+    }
+    .contact-end{
+        padding-bottom: 5%;
+    }
+    #enquiry-btn{
+        display: none;
+    }
+    .fa-bars{
+        margin-top: 20px;
+    }
+    .sidebar .right .nav-list li{
+        display: block;
+    }
+    .sidebar .right .nav-list #enquiry-btn{
+        display: block;
+    }
+    .regular .right .fa-bars{
+        display: block;
+    }
+    #contact-para-1{
+        padding-right: 5%;
+    }
+    .chat{
+        z-index: 999;
+    }
+    .courses-list{
+        padding-bottom: 5vw;
+    }
+    .courses-list-container-1, .courses-list-container-2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .courses-list-items{
+        width: 95vw;
+    }
+    .course-heading{
+        font-size: 2.5em;
+        padding: 0 1vw;
+    }
+    .english-levels-card{
+        flex-direction: column;
+        gap: 5vh;
+        align-items: center;
+        justify-content: center;
+        padding: 0 35vw;
+    }
+    .activity-wrapper{
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .computer-courses-about .title h2{
+        color: #003366;
+    }
+    .job{
+        flex-direction: column;
+    }
+    .job-left{
+        width: 100%;
+    }
+    .job-right{
+        width: 100%;
+    }
+    .job-right p{
+        line-height: 2;
+    }
+    .english{
+        overflow: hidden;
+        padding-bottom: 5vh;
+    }
+    .english-levels {
+        width: 100%;
+        height: auto;
+    }
+    .english-levels-img {
+        padding: 0 4vw;
+        width: 100%;
+        height: auto;
+    }
+    .english-levels-img img {
+        width: 100%;
+        height: auto;
+    }
+    #presen{
+        width: 300px;
+    }
+    #role{
+        width: 300px;
+    }
+    .academics-card{
+        gap: 8vh;
+    }
+    .book{
+        color: white;
+    }
+    .cover{
+        color: white;
+        font-weight: bold;
+    }
+    .book p{
+        padding: 0 3vw;
+        color: black;
+        text-align: center;
+        padding-left: 5vw;
+    }
+    #mainContentPopup{
+        width: 60vw;
+        height: 50vh;
+        border-radius: 3vw;
+    }
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: darkblue;
+}
+#popup{
+    display: none;
+    z-index: 1;
+    width: 20vw;
+    height: 60vh;
+    background-color: lightgreen;
+    border-radius: 0.7vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade 3s ease-in-out;
+}
+h1{
+    text-align: center;
+}
+#closeIcon{
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 0.3vw;
+    cursor: pointer;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: scale(0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
