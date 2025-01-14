@@ -14,7 +14,7 @@
                 <h2>Captcha Generator</h2>
             </div>
             <div class="captcha">
-                <h4>G78GH9</h4>
+                <h4 id="random-captcha"></h4>
             </div>
             <div class="captcha-input">
                 <input type="text" id="input-captcha" placeholder="Enter captcha here..">
@@ -23,7 +23,9 @@
             <div class="submit">
                 <button id="submit-btn">Submit</button>
             </div>
-
+            <div class="message" id="message-box">
+                <p id="error-message">Captcha doesn't match!!</p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
